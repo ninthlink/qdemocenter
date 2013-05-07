@@ -85,81 +85,29 @@
  * @see html.tpl.php
  */
 ?>
-<div id="page-wrapper"><div id="page">
+<div id="scontent">
+<?php print render($page['content']); ?>
+</div>
 
-  <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
-
-    <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-    <?php endif; ?>
-
-    <?php if ($site_name || $site_slogan): ?>
-      <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-
-        <?php if ($site_name): ?>
+<!-- We wrap the #sidecar-content element in a container with an inline style of display:none; so there is no flicker of the content before it is move. -->
+<!-- If you want to have the content present/visible as a fallback, then you can remove the inline style and wrapping container -->
+<div style="display:none;">
+    <!-- This element's selector '#sidecar-content' is passed to the new Sidecar() class as the first argument. Sidecar moves this element and its content to the Sidecar -->
+    <div id="sidecar-content">
+    	<div id="sidetop">
+			<?php if ($breadcrumb): ?>
+            <div id="breadcrumbs"><?php print $breadcrumb; ?><?php if ($title): ?><div class="breadcrumb last">&nbsp;&gt;&nbsp;<?php print $title; ?></div><?php endif; ?></div>
+            <?php endif; ?>
+            
+            <?php if ($site_name): ?>
             <div id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
             </div>
-        <?php endif; ?>
-
-        <?php if ($site_slogan): ?>
-          <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-            <?php print $site_slogan; ?>
-          </div>
-        <?php endif; ?>
-
-      </div> <!-- /#name-and-slogan -->
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-
-  </div></div> <!-- /.section, /#header -->
-
-  <?php if ($messages): ?>
-    <div id="messages"><div class="section clearfix">
-      <?php print $messages; ?>
-    </div></div> <!-- /.section, /#messages -->
-  <?php endif; ?>
-
-  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
-
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
-    <div id="content" class="column"><div class="section">
-      <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title">
-          <?php print $title; ?>
-        </h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php if ($tabs): ?>
-        <div class="tabs">
-          <?php print render($tabs); ?>
+            <?php endif; ?>
+            
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="backhome"><?php print t('Back to Home'); ?></a>
         </div>
-      <?php endif; ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links">
-          <?php print render($action_links); ?>
-        </ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
-
-    </div></div> <!-- /.section, /#content -->
-
-    <?php if ($page['sidebar_first']): ?>
-      <div id="sidebar-first" class="column sidebar"><div class="section">
+        
         <?php print render($page['sidebar_first']); ?>
-      </div></div> <!-- /.section, /#sidebar-first -->
-    <?php endif; ?>
-
-  </div></div> <!-- /#main, /#main-wrapper -->
-
-</div></div> <!-- /#page, /#page-wrapper -->
+    </div>
+</div>

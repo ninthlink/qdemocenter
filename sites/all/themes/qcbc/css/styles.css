@@ -137,3 +137,97 @@ body {
 .hdemos .views-field-view-node a:hover {
 	text-decoration: none;
 }
+
+#dframe {
+	display: block;
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/examplesite.jpg) no-repeat 0 0;
+	z-index: 1;
+}
+
+#scontent {
+	position: relative;
+	width: 1920px;
+	height: 1080px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#sidetop {
+	background: url(../images/sidetop.png) no-repeat 0 0;
+	width: 617px;
+	height: 206px;
+	color: #fff;
+	padding: 18px 0 0 20px;
+	position: relative;
+}
+#sidecar-content h3 {
+	/*
+	font-size: 1.6em;
+	line-height: 1em;
+	*/
+	margin: 0 0 10px;
+}
+#breadcrumbs {
+	float: left;
+	width: 100%;
+}
+#sidetop .breadcrumb {
+	font-size: 18px;
+	line-height: 22px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#sidetop .breadcrumb a {
+	float: left;
+	width: 18px;
+	height: 16px;
+	text-indent: -999em;
+	background: url(../images/home.png) no-repeat 0 0;
+	margin: 3px 0;
+}
+#sidetop #site-name {
+	font-size: 40px;
+	margin: 50px 0 20px;
+}
+#sidetop #site-name a {
+	color: #fff;
+}
+
+.vdemos {
+	float: left;
+	width: 100%;
+}
+.vdemos .views-row {
+	border-bottom: 1px solid #333;
+	float: left;
+	width: 600px;
+	padding: 7px 7px 7px 30px;
+	height: 142px;
+	position: relative;
+}
+.vdemos .views-row .views-field-field-thumbnail,
+.vdemos .views-row .views-field-field-thumbnail div,
+.vdemos .views-row .views-field-field-thumbnail img {
+	float: right;
+}
+.vdemos .views-row .views-field-field-thumbnail img {
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.vdemos .views-row .views-field-view-node a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 637px;
+	height: 156px;
+	background: url(../images/fx.gif) repeat 0 0;
+	text-indent: -999em;
+}
+.content {
+	margin: 0;
+}

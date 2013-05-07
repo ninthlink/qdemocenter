@@ -4,4 +4,18 @@ base theme = bartik
 core = 7.x
 engine = phptemplate
 
+stylesheets[all][] = css/sidecar.css
 stylesheets[all][] = css/styles.css
+
+scripts[] = js/sidecar.dev.js
+scripts[] = js/qcbc.js
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar
