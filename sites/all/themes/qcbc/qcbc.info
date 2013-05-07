@@ -1,0 +1,7 @@
+name = QCBC
+description = Theme for Qualcomm Interactive Demo Center(s)
+base theme = bartik
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/styles.css
