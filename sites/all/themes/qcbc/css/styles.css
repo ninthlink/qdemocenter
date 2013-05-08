@@ -214,6 +214,9 @@ body {
 	height: 142px;
 	position: relative;
 }
+.vdemos .views-row.active {
+	background: #ebebeb;
+}
 .vdemos .views-row .views-field-field-thumbnail,
 .vdemos .views-row .views-field-field-thumbnail div,
 .vdemos .views-row .views-field-field-thumbnail img {
