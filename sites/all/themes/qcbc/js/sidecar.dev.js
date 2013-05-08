@@ -50,6 +50,7 @@ var Sidecar;
         this.options.openDelay = 250;
         this.options.sidecarPosition = 'left';
         this.options.shadow = true;
+		this.options.initialOpenFor = 0;
         
         this.elems.body = $('body');
         this.elems.sidecarWrapper = $('#sidecar-wrapper');
@@ -180,6 +181,11 @@ var Sidecar;
             event.preventDefault();
             self.close();
         });
+		
+		if ( this.options.initialOpenFor > 0 ) {
+			//alert('and then, initially open for... '+ this.options.initialOpenFor);
+			this.elems.open.click();
+		}
     };
     
     window.Sidecar.prototype.close = function(){

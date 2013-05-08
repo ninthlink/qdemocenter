@@ -44,7 +44,9 @@ a:hover {
 	font-family: "QualcommWeb-Bold", Arial, sans-serif;
 	font-weight: normal;
 }
-.hdemos .views-field-title {
+.hdemos .views-field-title,
+a#backhome,
+.vdemos .views-field-title {
 	font-family: "QualcommWeb-Semibold", Arial, sans-serif;
 	font-weight: normal;
 }
@@ -128,11 +130,12 @@ body {
 	background: url(../images/launch.png) no-repeat 0 0;
 	color: #fff;
 	display: block;
-	font-size: 32px;
-	line-height: 32px;
+	font-size: 33px;
+	line-height: 33px;
 	padding: 14px 0 0 113px;
 	width: 244px;
 	height: 49px;
+	letter-spacing: 1px;
 }
 .hdemos .views-field-view-node a:hover {
 	text-decoration: none;
@@ -193,7 +196,7 @@ body {
 }
 #sidetop #site-name {
 	font-size: 40px;
-	margin: 50px 0 20px;
+	margin: 72px 0 28px;
 }
 #sidetop #site-name a {
 	color: #fff;
@@ -218,6 +221,7 @@ body {
 }
 .vdemos .views-row .views-field-field-thumbnail img {
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	margin-left: 50px;
 }
 .vdemos .views-row .views-field-view-node a {
 	position: absolute;
@@ -228,6 +232,24 @@ body {
 	background: url(../images/fx.gif) repeat 0 0;
 	text-indent: -999em;
 }
+.vdemos .views-row .views-field-title {
+	font-size: 24px;
+	margin: 5px 0 6px;
+}
+.vdemos .views-row .views-field-body {
+	font-size: 18px;
+	line-height: 18px;
+}
 .content {
 	margin: 0;
+}
+a#backhome {
+	float: left;
+	width: 179px;
+	height: 37px;
+	font-size: 26px;
+	line-height: 26px;
+	color: #fff;
+	padding: 6px 0 0 60px;
+	background: url(../images/back.png) no-repeat 0 0;
 }

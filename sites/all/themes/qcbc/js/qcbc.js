@@ -5,7 +5,8 @@ jQuery(function($){
 			width: '637px', // sets the width of the Sidecar
 			tabPosition: '140px', // sets the top position of the open/close tab
 			sidecarPosition: 'right', // sets the Sidecar position to right or left
-			shadow: true // enable or disable the shadow in the Sidecar
+			shadow: true, // enable or disable the shadow in the Sidecar,
+			initialOpenFor: 1000
 		} ));
 		
 		$('#showdeviceshowcase').click(function() {

@@ -19,7 +19,7 @@ body div#sidecar {
  * If you don't define a background for your content, you can change this to what you want it to be
  */
 body div#sidecar .sidecar-inner {
-    background: #eaecef;
+    background: #fff;
 }
 
 
@@ -81,7 +81,7 @@ body #sidecar-close:visited {
     color: #fff;
     background: #313235;
     background: rgba(49,50,53,0.95);
-    border-radius: 20px 0 0 20px;
+    border-radius: 34px 0 0 34px;
     box-shadow: 0px 0px 0px 3px rgba(169,173,178,0.7);
 }
 
@@ -180,8 +180,8 @@ body #sidecar-close div.bar {
     width: 4px;
     height: 4px;
     position: absolute;
-    top: 13px;
-    left: 10px;
+    top: 32px;
+    left: 19px;
 }
 body.sidecar-left #sidecar-open div.bar,
 body.sidecar-left #sidecar-close div.bar {
@@ -190,7 +190,7 @@ body.sidecar-left #sidecar-close div.bar {
 }
 body #sidecar-open div.bar.horiz,
 body #sidecar-close div.bar.horiz {
-    width: 16px;
+    width: 27px;
 }
 body #sidecar-open div.bar.vert,
 body #sidecar-close div.bar.vert {
@@ -206,10 +206,10 @@ body.sidecar-left #sidecar-close div.bar.vert {
 }
 body #sidecar-open.icon-bars div.bar.horiz,
 body #sidecar-open.icon-bars div.bar.vert {
-    top: 14px;
-    left: 10px;
+    top: 32px;
+    left: 19px;
     height: 3px;
-    width: 18px;
+    width: 27px;
     background: none;
     border-top-width: 3px;
     border-top-style: solid;
@@ -222,8 +222,8 @@ body.sidecar-left #sidecar-open.icon-bars div.bar.vert {
     left: auto;
 }
 body #sidecar-open.icon-bars div.bar.vert {
-    top: 8px;
-    width: 18px;
+    top: 26px;
+    width: 27px;
     border-top-width: 3px;
     border-top-style: solid;
 }
@@ -246,8 +246,8 @@ body #sidecar-close:visited {
     visibility: visible;
     text-decoration: none;
     opacity: 1;
-    width: 35px;
-    height: 32px;
+    width: 55px;
+    height: 69px;
     position: fixed;
     top: 64px;
     right: 0;
