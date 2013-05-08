@@ -185,6 +185,7 @@ var Sidecar;
 		if ( this.options.initialOpenFor > 0 ) {
 			//alert('and then, initially open for... '+ this.options.initialOpenFor);
 			this.elems.open.click();
+			setTimeout(function() { jQuery('#sidecar-close').click(); }, this.options.initialOpenFor);
 		}
     };
     

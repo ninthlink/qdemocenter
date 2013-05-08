@@ -6,7 +6,7 @@ jQuery(function($){
 			tabPosition: '140px', // sets the top position of the open/close tab
 			sidecarPosition: 'right', // sets the Sidecar position to right or left
 			shadow: true, // enable or disable the shadow in the Sidecar,
-			initialOpenFor: 1000
+			initialOpenFor: 2000
 		} ));
 		
 		$('#showdeviceshowcase').click(function() {
