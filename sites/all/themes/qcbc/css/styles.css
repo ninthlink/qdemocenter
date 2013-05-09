@@ -145,7 +145,10 @@ body {
 	text-decoration: none;
     background-position: 0 100%;
 }
-
+/* and then */
+body #sidecar-wrapper {
+    overflow: hidden;
+}
 #dframe {
 	display: block;
 	width: 1920px;
