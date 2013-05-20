@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the qDemos Feature feature.
+ */
+
+include_once 'qdemos_feature.features.inc';
