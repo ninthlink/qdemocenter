@@ -1,4 +1,56 @@
+var qcbchoff = 0, qcbcount = 0;
+
 jQuery(function($){
+	if ( $('body').hasClass('front') ) {
+		if (Modernizr.video.h264 == "") {
+			// h264 is not supported
+			console.log('<video /> does not seem to be supported by this browser');
+		} else {
+			console.log('<video /> IS supported by this browser?');
+			if ( $('#hmovie').size() == 0 ) {
+				$('#header').prepend('<div id="hmovie" />');
+			}
+			$('#hmovie').hide().empty();
+			$('<video />').attr({
+				width: 1920,
+				height: 500,
+				src: "/sites/all/themes/qcbc/attractor-h264.mp4?r=051013",
+				autoplay: true,
+				loop: true
+			}).appendTo('#hmovie').parent().show();
+		}
+		
+		var hdemos = $('.hdemos .views-row');
+		qcbcount = hdemos.size();
+		if ( qcbcount > 4 ) {
+			$('.hdemos .view-content').wrapInner('<div class="hslider" />');
+			var siz = qcbcount * 430;
+			$('.hslider').css('width',siz);
+			$('.hdemos').append('<div class="harr"><a href="#p" class="off" /><a href="#n" class="n" /></div>');
+			$('.hdemos .harr a').click(function() {
+				if ( $(this).hasClass('off') == false ) {
+					$(this).siblings('.off').removeClass('off');
+					if ( $(this).hasClass('n') ) {
+						qcbchoff += 4;
+						if ( qcbchoff + 4 > qcbcount ) {
+							$(this).addClass('off');
+						}
+					} else { //p
+						qcbchoff -= 4;
+						if ( qcbchoff == 0 ) {
+							$(this).addClass('off');
+						}
+					}
+					
+					$('.hslider').animate({
+						left: '-'+ ( qcbchoff * 430 ) + 'px'
+					}, 500);
+				}
+				return false;
+			});
+		}
+	}
+	
 	if ( $('body').hasClass('node-type-demo') ) {
 		// Storing the Sidecar instance using jQuery's $.data() method
 		$.data(document.body, 'Sidecar', new Sidecar( '#sidecar-content', {
