@@ -301,8 +301,8 @@ body #sidecar-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 637px;
-	height: 156px;
+	width: 100%;
+	height: 100%;
 	background: url(../images/fx.gif) repeat 0 0;
 	text-indent: -999em;
 }
