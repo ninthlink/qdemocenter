@@ -229,12 +229,13 @@ body #sidecar-wrapper {
 }
 
 #sidetop {
-	background: url(../images/sidetop.png) no-repeat 0 0;
-	width: 617px;
-	height: 206px;
 	color: #fff;
-	padding: 18px 0 0 20px;
+	background: url(../images/sidetop.png) no-repeat 0 0;
+	display: block;
+	padding: 18px 0 0 18px;
 	position: relative;
+	width: 372px;
+	height: 192px;
 }
 #sidecar-content h3 {
 	/*
@@ -248,51 +249,53 @@ body #sidecar-wrapper {
 	width: 100%;
 }
 #sidetop .breadcrumb {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 22px;
 	float: left;
 	margin: 0;
 	padding: 0;
 }
 #sidetop .breadcrumb a {
+	background: url(../images/home.png) no-repeat 0 0;
 	float: left;
+	margin: 3px 0;
 	width: 18px;
 	height: 16px;
 	text-indent: -999em;
-	background: url(../images/home.png) no-repeat 0 0;
-	margin: 3px 0;
 }
 #sidetop #site-name {
-	font-size: 40px;
-	margin: 72px 0 28px;
+	font-size: 35px;
+	margin: 72px 0 26px;
 }
 #sidetop #site-name a {
 	color: #fff;
 }
-
 .vdemos {
-	float: left;
+	display: block;
 	width: 100%;
+	height: 870px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 .vdemos .views-row {
 	border-bottom: 1px solid #333;
-	float: left;
-	width: 600px;
-	padding: 7px 7px 7px 30px;
-	height: 142px;
+	display: block;
+	padding: 15px 18px 7px;
 	position: relative;
+	background: #eeeff1 url(../images/sidegrad.png) repeat-y 0 0; 
 }
 .vdemos .views-row.active {
-	background: #ebebeb;
+	background: #fff;
 }
+/*
 .vdemos .views-field-field-thumbnail,
 .vdemos .views-field-field-thumbnail div,
 .vdemos .views-field-field-thumbnail img {
 	float: right;
 }
+*/
 .vdemos .views-field-field-thumbnail img {
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	margin-left: 50px;
 }
 .vdemos .views-field-view-node a {
 	position: absolute;
@@ -304,8 +307,9 @@ body #sidecar-wrapper {
 	text-indent: -999em;
 }
 .vdemos .views-field-title {
-	font-size: 22px;
-	margin: 5px 0 6px;
+	font-size: 18px;
+	line-height: 32px;
+	margin: 0;
 }
 .vdemos .views-field-body {
 	font-size: 18px;
