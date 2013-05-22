@@ -89,7 +89,7 @@
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
 
-$db_url = 'mysqli://662051_devicedb:hsRFpVl1fb@mysql50-51.wc1/662051_devicedb';
+$db_url = 'mysqli://662051_qcbc:FHTUaYt8H2@mysql51-007.wc1/662051_qcbc';
 $db_prefix = '';
 
 /**
