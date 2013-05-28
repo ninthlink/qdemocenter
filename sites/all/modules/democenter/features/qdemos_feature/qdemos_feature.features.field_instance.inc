@@ -14,7 +14,7 @@ function qdemos_feature_field_default_field_instances() {
   $field_instances['node-demo-field_thumbnail'] = array(
     'bundle' => 'demo',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'ideally, thumbnails should be 352 x 198',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -118,6 +118,7 @@ function qdemos_feature_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Thumbnail');
   t('URL');
+  t('ideally, thumbnails should be 352 x 198');
 
   return $field_instances;
 }
