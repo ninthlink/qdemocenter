@@ -15,7 +15,7 @@ jQuery(function($){
 			$('<video />').attr({
 				width: 1920,
 				height: 500,
-				src: "/sites/all/themes/qcbc/attractor-h264.mp4?r=051013",
+				src: "/sites/all/themes/qcbc/attractor-h264.mp4?r=052813",
 				autoplay: true,
 				loop: true
 			}).appendTo('#hmovie').parent().show();
