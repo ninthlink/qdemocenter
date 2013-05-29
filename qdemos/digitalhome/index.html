@@ -9,9 +9,11 @@
 		<script type="text/javascript">
         jQuery(function($) {
 			var ww = $(window).width();
-			var wh = Math.round ( 1080 * ww / 1920 );
+			var wh = $(window).height();
 			$('body').css('overflow','hidden');
-			swfobject.embedSWF("DigitalHome29.swf", "myContent", ww, wh, "9.0.0", "../swfobject/expressInstall.swf");
+			var params = {};
+			params.wmode = "opaque";
+			swfobject.embedSWF("DigitalHome29.swf", "myContent", ww, wh, "9.0.0", "../swfobject/expressInstall.swf", params);
         });
 		</script>
 	</head>
