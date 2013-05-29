@@ -3,22 +3,13 @@ var qcbchoff = 0, qcbcount = 0;
 jQuery(function($){
 	var ww = $(window).width();
 	if ( $('body').hasClass('front') ) {
-		if (Modernizr.video.h264 == "") {
-			// h264 is not supported
-			// console.log('<video /> does not seem to be supported by this browser');
-		} else {
-			// console.log('<video /> IS supported by this browser?');
+		if (Modernizr.video.h264 == "probably") {
 			if ( $('#hmovie').size() == 0 ) {
 				$('#header').prepend('<div id="hmovie" />');
 			}
-			$('#hmovie').hide().empty();
-			$('<video />').attr({
-				width: 1920,
-				height: 500,
-				src: "/sites/all/themes/qcbc/attractor-h264.mp4?r=052813",
-				autoplay: true,
-				loop: true
-			}).appendTo('#hmovie').parent().show();
+			$('#hmovie').hide().empty()
+			.append('<video width="1920" height="500" autoplay="autoplay" loop="loop" poster="/sites/all/themes/qcbc/images/header.png"><source src="/sites/all/themes/qcbc/attractor-h264.mp4?r=052813" /></video>')
+			.show().parent().show();
 		}
 		
 		var hdemos = $('.hdemos .views-row');
