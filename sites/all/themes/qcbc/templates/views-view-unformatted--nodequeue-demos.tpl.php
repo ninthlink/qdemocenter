@@ -17,8 +17,6 @@
 	  }
 	  print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php
-	
-//	  if ( $view->result[$id] ) echo '<pre style="display:none" title="'. $view->result[$id]->nid .'">'. print_r($view->result[$id],true) .'</pre>';
 	  
 	print $row;
 	
