@@ -14,8 +14,8 @@ jQuery(function($){
 			$('#hmovie').jsMovie({
 				folder: qcbct+"images/hseqp460/",
 				sequence: "demo-center-mobile_#####.png",from:0,to:1139,step:1,
-				width: 1920,
-				height: 500,
+				width: 1366,
+				height: 356,
 				grid: {height:460,width:120,rows:1,columns:1},
 				fps:30,
 				imageScale:true,
