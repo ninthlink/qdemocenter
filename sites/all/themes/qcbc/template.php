@@ -16,7 +16,7 @@ function qcbc_preprocess_html(&$vars) {
             'content' => 'True',
         )
     );
-    drupal_add_html_head($metatag, 'meta_handheldfriendly');
+    drupal_add_html_head($metatag, 'qmeta_handheldfriendly');
 
 	// <meta name="MobileOptimized" content="1366" />
     $metatag = array(
@@ -27,7 +27,7 @@ function qcbc_preprocess_html(&$vars) {
             'content' => '1366',
         )
     );
-    drupal_add_html_head($metatag, 'meta_mobileoptimized');
+    drupal_add_html_head($metatag, 'qmeta_mobileoptimized');
     
 	// <meta name="viewport" content="width=1366,maximum-scale=1.0" />
     $metatag = array(
@@ -38,7 +38,7 @@ function qcbc_preprocess_html(&$vars) {
             'content' => 'width=1366,maximum-scale=1.0',
         )
     );
-    drupal_add_html_head($metatag, 'meta_viewport');
+    drupal_add_html_head($metatag, 'qmeta_viewport');
 	
 	// <meta name="apple-mobile-web-app-capable" content="yes" />
     $metatag = array(
@@ -49,7 +49,7 @@ function qcbc_preprocess_html(&$vars) {
             'content' => 'yes',
         )
     );
-    drupal_add_html_head($metatag, 'meta_viewport');
+    drupal_add_html_head($metatag, 'qmeta_appcapable');
 	
 	// <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     $metatag = array(
@@ -60,5 +60,5 @@ function qcbc_preprocess_html(&$vars) {
             'content' => 'black',
         )
     );
-    drupal_add_html_head($metatag, 'meta_viewport');
+    drupal_add_html_head($metatag, 'qmeta_statusbar');
 }
