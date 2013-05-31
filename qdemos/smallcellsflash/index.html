@@ -8,9 +8,9 @@
         <script type="text/javascript" src="../../sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
 		<script type="text/javascript">
         jQuery(function($) {
+			$('body').css('overflow','hidden');
 			var ww = $(window).width();
 			var wh = $(window).height();
-			$('body').css('overflow','hidden');
 			var params = {};
 			params.wmode = "opaque";
 			swfobject.embedSWF("femtocell-052213.swf?r=0529", "myContent", ww, wh, "9.0.0", "../swfobject/expressInstall.swf", params);
