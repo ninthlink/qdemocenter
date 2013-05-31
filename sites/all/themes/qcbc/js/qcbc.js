@@ -6,11 +6,22 @@ jQuery(function($){
 			if ( $('#hmovie').size() == 0 ) {
 				$('#header').prepend('<div id="hmovie" />');
 			}
-		if (Modernizr.video.h264 == "probably") {
+//alert('bc :: '+ jQuery('body').attr('class'));
+		var qcbcvid = false;
+
+		if ( $('body').hasClass('desktop') && ( Modernizr.video.h264 == "probably" ) ) {
+			qcbcvid = true;
+		}
+		if ( qcbcvid ) {
 			$('#hmovie').hide().empty()
 			.append('<video width="1920" height="500" autoplay="autoplay" loop="loop" poster="'+qcbct+'images/header.png"><source src="'+qcbct+'attractor-h264.mp4?r=052813" /></video>')
 			.show().parent().show();
 		} else {
+/*
+			$('#hmovie').bind('loaded',function() {
+				alert('hmovie sequence loaded?');
+});
+*/
 			$('#hmovie').jsMovie({
 				folder: qcbct+"images/hseqp460/",
 				sequence: "demo-center-mobile_#####.png",from:0,to:1139,step:1,
@@ -21,7 +32,7 @@ jQuery(function($){
 				imageScale:true,
 				playOnLoad:true
 			});
-		}
+	}
 		
 		var hdemos = $('.hdemos .views-row');
 		qcbcount = hdemos.size();
