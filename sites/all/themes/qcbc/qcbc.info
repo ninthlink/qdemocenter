@@ -9,6 +9,7 @@ stylesheets[all][] = css/styles.css
 stylesheets[all and (max-width: 1900px)][] = css/tablet.css
 
 scripts[] = js/sidecar.dev.js
+scripts[] = js/jquery.jsmovie.1.4.3b.min.js
 scripts[] = js/qcbc.js
 
 regions[header] = Header

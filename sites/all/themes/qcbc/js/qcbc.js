@@ -1,15 +1,26 @@
-var qcbchoff = 0, qcbcount = 0;
+var qcbchoff = 0, qcbcount = 0, qcbct = '/sites/all/themes/qcbc/';
 
 jQuery(function($){
 	var ww = $(window).width();
 	if ( $('body').hasClass('front') ) {
-		if (Modernizr.video.h264 == "probably") {
 			if ( $('#hmovie').size() == 0 ) {
 				$('#header').prepend('<div id="hmovie" />');
 			}
+		if (Modernizr.video.h264 == "probably") {
 			$('#hmovie').hide().empty()
-			.append('<video width="1920" height="500" autoplay="autoplay" loop="loop" poster="/sites/all/themes/qcbc/images/header.png"><source src="/sites/all/themes/qcbc/attractor-h264.mp4?r=052813" /></video>')
+			.append('<video width="1920" height="500" autoplay="autoplay" loop="loop" poster="'+qcbct+'images/header.png"><source src="'+qcbct+'attractor-h264.mp4?r=052813" /></video>')
 			.show().parent().show();
+		} else {
+			$('#hmovie').jsMovie({
+				folder: qcbct+"images/hseqp460/",
+				sequence: "demo-center-mobile_#####.png",from:0,to:1139,step:1,
+				width: 1920,
+				height: 500,
+				grid: {height:460,width:120,rows:1,columns:1},
+				fps:30,
+				imageScale:true,
+				playOnLoad:true
+			});
 		}
 		
 		var hdemos = $('.hdemos .views-row');
@@ -70,7 +81,7 @@ jQuery(function($){
 		
 		if ( $('body').hasClass('front') ) {
 			var mh = Math.round(ww*500/1920);
-			$('#hmovie, #hmovie video, #header').width(ww).height(mh);
+			$('#header, #hmovie, #hmovie video, #hmovie .jsMovieFrame').width(ww).height(mh);
 			var rem = wh - mh - 20;
 			if ( rem < 330 ) rem = 330;
 			$('.hdemos').height(rem);
