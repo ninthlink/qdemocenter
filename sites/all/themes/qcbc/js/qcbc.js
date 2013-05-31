@@ -39,9 +39,10 @@ jQuery(function($){
 		var qcbcmax = 4;
 		var qcbcsw = 430;
 		if ( ww < 1900 ) {
-			qcbcmax = 3;
-			qcbcsw = Math.floor(ww/3);
+			//qcbcmax = 3;
+			qcbcsw = Math.floor((ww-160)/qcbcmax);
 			$('.hdemos .views-row').width(qcbcsw);
+			$('.hdemos .view-content').width(ww-160).css('margin','0 80px');
 		}
 		
 		if ( qcbcount > qcbcmax ) {
