@@ -87,6 +87,7 @@ jQuery(function($){
 	}
 	
 	// dyn
+	$('body').css('overflow','hidden');
 	$(window).bind('resize.qcbc', function() {
 		var ww = $(window).width();
 		var wh = $(window).height();
