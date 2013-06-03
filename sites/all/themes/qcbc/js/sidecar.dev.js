@@ -134,7 +134,7 @@ var Sidecar;
         
         this.elems.sidecarContent.appendTo( this.elems.drawerInner );
         this.elems.drawerInner.css({
-            height: $(document).height()
+            height: $(window).height()
         });
         
         this._addOpenButton();
