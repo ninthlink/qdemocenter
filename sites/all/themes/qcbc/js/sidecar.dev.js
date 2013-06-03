@@ -175,12 +175,16 @@ var Sidecar;
         this.elems.open.on('click', function(event){
             event.preventDefault();
             self.open();
-        });
+        }).on('focusin', function(event){
+            self.open();
+        });;
         
         this.elems.close.on('click', function(event){
             event.preventDefault();
             self.close();
-        });
+        }).on('focusin', function(event){
+            self.close();
+        });;
 		
 		if ( this.options.initialOpenFor > 0 ) {
 			//alert('and then, initially open for... '+ this.options.initialOpenFor);
