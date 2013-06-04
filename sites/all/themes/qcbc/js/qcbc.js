@@ -23,11 +23,11 @@ jQuery(function($){
 });
 */
 			$('#hmovie').jsMovie({
-				folder: qcbct+"images/hseqp460/",
+				folder: qcbct+"images/seq2/",
 				sequence: "demo-center-mobile_#####.png",from:0,to:1139,step:1,
 				width: 1366,
 				height: 356,
-				grid: {height:460,width:120,rows:1,columns:1},
+				grid: {height:1366,width:356,rows:1,columns:1},
 				fps:30,
 				imageScale:true,
 				playOnLoad:true
