@@ -4,7 +4,7 @@
 		<title>Neighborhood Small Cells</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <style type="text/css">
-		body { background: #000; margin: 0; padding: 0; text-align: center }
+		body { background: url(bg.jpg) repeat 0 0; margin: 0; padding: 0; text-align: center }
         #myContent { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); width: 1280px; height: 720px; margin: 0 auto; }
         </style>
 	</head>
@@ -14,11 +14,22 @@
 			<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
 		</div>
 		<script type="text/javascript" src="../swfobject/swfobject.js"></script>
+        <script type="text/javascript" src="../../sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
 		<script type="text/javascript">
+        jQuery(function($) {
+			$('body').css('overflow','hidden');
+			var ww = $(window).width();
+			var wh = $(window).height();
 			var arr = {};
 			var params = {};
 			params.wmode = "transparent";
 			swfobject.embedSWF("femtocell-052213.swf?r=0725", "myContent", 1280, 720, "9.0.0", "../swfobject/expressInstall.swf", arr, params);
+			
+			var dif = wh - 720;
+			if ( dif > 0 ) {
+				$('#myContent').css('margin-top', (Math.floor(dif/2)+'px'));
+			}
+		});
 		</script>
 	</body>
 </html>
