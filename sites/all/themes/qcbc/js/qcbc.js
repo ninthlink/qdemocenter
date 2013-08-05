@@ -14,7 +14,7 @@ jQuery(function($){
 		}
 		if ( qcbcvid ) {
 			$('#hmovie').hide().empty()
-			.append('<video width="1920" height="500" autoplay="autoplay" loop="loop" poster="'+qcbct+'images/header.png"><source src="'+qcbct+'attractor-h264.mp4?r=052813" /></video>')
+			.append('<video width="1920" height="500" autoplay="autoplay" loop="loop" poster="'+qcbct+'images/header.png"><source src="'+qcbct+'attractor-h264.mp4?r=080513" /></video>')
 			.show().parent().show();
 		} else {
 /*
