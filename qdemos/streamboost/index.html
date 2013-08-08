@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Qualcomm&reg; StreamBoost</title>
+<style type="text/css">
+body {
+	background: #f3f3f3;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#frame {
+	background: #fff;
+	margin: 0 auto;
+	padding: 20px;
+	width: 1000px;
+	height: 675px;
+}
+</style>
+</head>
+
+<body>
+	<div id="frame">
+    	<iframe width="1000" height="675" frameborder="0" src="http://www.qca.qualcomm.com/streamboost/partner.html"></iframe>
+    </div>
+    <script type="text/javascript" src="../../sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
+    <script type="text/javascript">
+    jQuery(function($) {
+        $('body').css('overflow','hidden');
+        var ww = $(window).width();
+        var wh = $(window).height();
+        
+        var dif = wh - 715;
+        if ( dif > 0 ) {
+            $('#frame').css('margin-top', (Math.floor(dif/2)+'px'));
+        }
+    });
+    </script>
+</body>
+</html>
