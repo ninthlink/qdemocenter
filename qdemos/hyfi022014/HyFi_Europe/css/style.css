@@ -1,0 +1,1080 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div { margin: 0; padding: 0; border: 0 none; }
+}
+
+/*Defines the style for normal unvisited links.*/
+.class1 a:link {
+	text-decoration:none;color:#6698B3;
+}
+
+/*Defines the style for visited links.*/
+.class1 a:visited {
+	text-decoration:color:#6698B3;
+}
+
+/*Defines the style for active links.
+A link becomes active once you click on it.
+.class1 a:hover {  
+	text-decoration:underline; color:white;*/
+}
+
+/*Defines the style for hovered links.
+A link is hovered when the mouse moves over it.
+Note: Not supported by Netscape browsers prior to version 6.*/
+.class1 a:active {
+	text-decoration:underline;
+}
+
+body{
+	padding:0px 0px 0px 0px;
+	background-color:#2c2c2c;
+	font:normal 11px tahoma,verdana,arial;
+	text-align: center;
+	
+
+	
+}
+
+
+
+#container{
+	background-image:url('../images/background.jpg');
+	background-color:WHITE;
+	background-image:no-repeat;
+	width:1920px;
+	height:1080px;
+	position: relative;
+ 	top: 0%;
+  	left: 0%;
+  	margin-top: 0px;
+  	margin-left: 0px;
+	opacity:0;
+	overflow:hidden;
+}
+
+#container2{
+	background-image: url('../images/plan-view-bg.jpg');
+	background-color: WHITE;
+	background-image: no-repeat;
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 0%;
+	left: -1px;
+	margin-top: 0px;
+	margin-left: 0px;
+	opacity: 0;
+	overflow: hidden;
+}
+
+#greyMask {
+background-image: url('../images/outsideMasker.png');
+
+background-image: no-repeat;
+width: 1920px;
+height: 1080px;
+position: absolute;
+top: 0%;
+left: 0%;
+margin-top: 0px;
+margin-left: 0px;
+
+overflow: hidden;
+}
+
+
+#signal-subnav {
+position: absolute;
+width: 370px;
+height: 73px;
+left: 8px;
+top: 745px;
+}
+
+#plan-view-signal-subnav {
+position: absolute;
+width: 210px;
+height: 252px;
+left: -30px;
+top: 222px;
+
+}
+
+
+#sidebar {
+position: absolute;
+background-image: url('../images/nav-bar.jpg');
+background-repeat:no-repeat;
+width: 381px;
+height: 1080px;
+margin: 0 0;
+left: -370px;
+top: 0;
+}
+
+#plan-view-sidebar {
+position: absolute;
+background-image: url('../images/plan-view-nav-bar.jpg');
+background-repeat: no-repeat;
+width: 150px;
+height: 1080px;
+left: -150px;
+}
+
+
+#toggle-buttons {
+position: absolute;
+top: 407px;
+left: 13px;
+width: 358px;
+overflow-x: hidden;
+height:340px;
+
+}
+#hdstreaming-Shield1 {
+position: absolute;
+top: 1px;
+left: 343px;
+width: 116px;
+}
+
+#hdstreaming-Shield2 {
+position: absolute;
+top: 68px;
+left: 343px;
+width: 116px;
+}
+#hdstreaming-Shield3 {
+position: absolute;
+top: 136px;
+left: 343px;
+width: 116px;
+}
+#hdstreaming-Shield4 {
+position: absolute;
+top: 203px;
+left: 343px;
+width: 116px;
+}
+
+#hdstreaming-Shield5 {
+position: absolute;
+top: 269px;
+left: 343px;
+width: 116px;
+}
+
+
+#hd-NotSupported1 {
+position: absolute;
+top: 1px;
+left: 363px;
+width: 116px;
+}
+
+#hd-NotSupported2 {
+position: absolute;
+top: 68px;
+left: 363px;
+width: 116px;
+}
+#hd-NotSupported3 {
+position: absolute;
+top: 136px;
+left: 363px;
+width: 116px;
+}
+#hd-NotSupported4 {
+position: absolute;
+top: 203px;
+left: 363px;
+width: 116px;
+}
+#hd-NotSupported5 {
+position: absolute;
+top: 270px;
+left: 363px;
+width: 116px;
+}
+
+
+
+#reset-btn {
+position: absolute;
+
+width: 123px;
+height: 45px;
+left: 34px;
+top: 820px;
+opacity:0;
+
+}
+#topTitleBar {
+position: absolute;
+
+
+left: 0px;
+top: 0px;
+}
+
+#HomeBtn {
+position: absolute;
+
+
+left: 340px;
+top: 5px;
+}
+
+#dp1 {
+position: absolute;
+width: 123px;
+height: 45px;
+left: 10px;
+top: 76px;
+}
+
+#dp1v2 {
+height: 45px;
+left: 13px;
+position: absolute;
+top: 360px;
+width: 123px;
+}
+
+#dp2v2 {
+height: 45px;
+left: 13px;
+position: absolute;
+top: 223px;
+width: 123px;
+}
+
+#dp3v2 {
+height: 45px;
+left: 13px;
+position: absolute;
+top: 80px;
+width: 123px;
+}
+#dp1v2-caption {
+left: 110px;
+position: absolute;
+top: 361px;
+width: 365px;
+height: 91px;
+pointer-events: none;
+opacity: 0;
+}
+#dp2v2-caption {
+left: 108px;
+position: absolute;
+top: 208px;
+width: 365px;
+height: 91px;
+pointer-events: none;
+opacity: 0;
+}
+#dp3v2-caption {
+left: 83px;
+position: absolute;
+top: 77px;
+width: 365px;
+height: 91px;
+pointer-events: none;
+opacity: 0;
+}
+
+
+#dp1-caption {
+    
+    left: -1px;
+    position: absolute;
+    top: -13px;
+	
+    width: 365px;
+	height: 91px;
+pointer-events: none;
+}
+
+
+#dp2 {
+position: absolute;
+width: 123px;
+height: 45px;
+left: 118px;
+top: 76px;
+
+}
+#dp2-caption {
+position: absolute;
+width: 365px;
+height: 91px;
+left: 0px;
+top: -21px;
+pointer-events: none;
+}
+#dp3 {
+position: absolute;
+width: 123px;
+height: 45px;
+left: 232px;
+top: 76px;
+}
+#dp3-caption {
+position: absolute;
+width: 365px;
+height: 91px;
+left: -2px;
+top: -9px;
+pointer-events: none;
+}
+
+
+#devicePersonalities-Menu {
+position: absolute;
+width: 123px;
+height: 45px;
+left: 8px;
+top: 869px;
+opacity: 0;
+}
+
+#bottomGreyBar {
+position: absolute;
+width: 1920px;
+height: 58px;
+left: 0px;
+top: 1080px;
+}
+
+
+#viewBtn {
+
+position: absolute;
+width: 300px;
+height: 56px;
+left: 1939px;
+top: 0px;
+}
+#viewBtn2 {
+
+position: absolute;
+width: 300px;
+height: 56px;
+left: 1464px; 
+top: 1px;
+opacity:0;
+}
+
+#heatMapBtn {
+position: absolute;
+width: 300px;
+height: 56px;
+left: 1822px;
+top: 1px;
+opacity:0;
+}
+
+#heatMapBtnOn {
+position: absolute;
+width: 300px;
+height: 56px;
+left: 2022px;
+top: 1px;
+opacity:0;
+}
+
+#heatMapKey {
+position: absolute;
+width: 650px;
+height: 56px;
+left: 2022px;
+top: 1px;
+opacity: 1;
+
+
+}
+#heatMapKeyInside {
+position: absolute;
+width: 650px;
+height: 56px;
+left: 0;
+top: 1px;
+opacity: 1;
+}
+
+#heatMapColor {
+position: relative;
+width: 31px;
+height: 780px;
+left: 409px;
+top: -371px;
+overflow-y: hidden;
+background-image: url('../images/color-bar-example.jpg');
+background-repeat: no-repeat;
+background-position: -26px -90px;
+opacity: 1;
+}
+
+
+
+#heatmapCover {
+position: relative;
+width: 996px;
+height: 983px;
+top: -116px;
+left: -108px;
+overflow-x: hidden;
+opacity: 0;
+
+overflow: hidden;
+
+}
+
+#heatmapCover2ndFloor {
+    height: 1003px;
+    left: -305px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -101px;
+    width: 906px;
+}
+#heatmapCover2ndFloor {
+    height: 1003px;
+    left: -305px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -101px;
+    width: 906px;
+}
+#heatmapCover3ndFloor {
+height: 1003px;
+left: -425px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+top: -74px;
+width: 906px;
+}
+
+#maskerDiv3 {
+height: 876px;
+left: 1420px;
+opacity: 1;
+overflow: hidden;
+position: absolute;
+top: 62px;
+width: 606px;
+}
+
+#maskerDiv {
+height: 876px;
+left: 815px;
+opacity: 1;
+overflow: hidden;
+position: absolute;
+top: 76px;
+width: 599px;
+}
+
+#firstMaskerDiv {
+    height: 876px;
+    left: 139px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    top: 90px;
+    width: 668px;
+}
+#hybrid-router {
+position: absolute;
+width: 151px;
+height: 148px;
+left: 730px;
+top: 515px;
+opacity:0;
+}
+
+
+#centralAccessPointID {
+position: absolute;
+
+left: 1700px;
+top: 370px;
+}
+
+#routerCaptionImageID {
+position: absolute;
+
+left: 408px;
+top: 790px;
+opacity:0;
+}
+
+#kitchenTitle {
+position: absolute;
+width: 105px;
+height: 23px;
+left: 22px;
+top: 30px;
+}
+
+
+#kitchen-device {
+position: absolute;
+width: 151px;
+height: 148px;
+left: 1003px;
+top: 799px;
+opacity: 0;
+}
+#closebtnID {
+position: absolute;
+left: -2px;
+top: -29px;
+}
+#dataWindowHyFi {
+position: absolute;
+width: 321px;
+height: 875px;
+left: 240px;
+top: -872px;
+opacity: 0;
+}
+
+#scrollmeID {
+position: absolute;
+width: 321px;
+height: 266px;
+left: 0px;
+top: 21px;
+
+}
+		.content{margin:40px; width:260px; height:500px; padding:20px; overflow:auto; background:#333;}
+		.content p:nth-child(even){color:#999; font-family:Georgia,serif; font-size:17px; font-style:italic;}
+		.content p:nth-child(3n+0){color:#c96;}
+		
+		
+				body{margin:0; padding:0; color:#eee; background:#222; font-family:Verdana,Geneva,sans-serif; font-size:13px; line-height:20px;}
+		a:link,a:visited,a:hover{color:#fff;}
+		h1{font-family:Georgia,serif; font-size:19px; font-style:italic; margin:20px 40px 0 40px; color:#09C;}
+		p{margin:0 0 20px 0;}
+		hr{height:0; border:none; border-bottom:1px solid rgba(255,255,255,0.2); border-top:1px solid rgba(0,0,0,0.9); margin:20px 10px; clear:both;}
+		.links{margin:10px 0 0 10px;}
+		.links a{display:inline-block; padding:2px 10px; margin:20px; background:#C30; text-decoration:none; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px;}
+		
+		
+#deviceData {
+color: white;
+font-family: 'Open Sans', 'sans-serif';
+font-size: 9pt;
+left: 127px;
+position: absolute;
+text-align: left;
+top: 35px;
+font-style: normal;
+font-weight: 800;
+
+
+}
+
+#chosenPersonailtyID {
+    height: 30px;
+    left: 53px;
+    position: absolute;
+    top: 163px;
+    width: 200px;
+}
+
+#outgoingInterfaceID {
+height: 30px;
+left: 53px;
+position: absolute;
+top: 226px;
+width: 200px;
+}
+
+
+#outgoingInterface2ID {
+	height: 30px;
+	left: 53px;
+	position: absolute;
+	top: 257px;
+	width: 200px;
+}
+
+
+#incomingInterfacesID {
+	height: 30px;
+	left: 25px;
+	position: absolute;
+	text-align: right;
+	top: 355px;
+	width: 200px;
+}
+
+#interfaceForVideoID {
+left: 68px;
+line-height: 30px;
+position: absolute;
+text-align: right;
+top: 716px;
+}
+
+#hdtvSupportID {
+left: 66px;
+line-height: 30px;
+position: absolute;
+text-align: right;
+top: 777px;
+}
+
+
+.deviceDataClass {
+    color: white;
+  font-family: 'Open Sans', 'sans-serif';
+    font-size: 9pt;
+    line-height: 30px;
+    text-align: left;
+	font-style: normal;
+font-weight: 800;
+	
+}
+
+.deviceDataClass2 {
+    color: white;
+  font-family: 'Open Sans', 'sans-serif';
+    font-size: 9pt;
+    line-height: 30px;
+    text-align: right;
+	font-style: normal;
+font-weight: 800;
+	
+}
+
+
+#master-device {
+position: absolute;
+width: 251px;
+height: 148px;
+left: 792px;
+top: 219px;
+opacity: 0;
+}
+
+#masterTitle {
+position: absolute;
+width: 105px;
+height: 23px;
+left: 75px;
+top: 30px;
+}
+
+
+#living-device {
+position: absolute;
+width: 151px;
+height: 187px;
+left: 1059px;
+top: 725px;
+opacity: 0;
+}
+
+#livingTitle {
+position: absolute;
+width: 0;
+height: 0;
+left: 23px;
+top: 31px;
+}
+
+
+#bedroom-device {
+position: absolute;
+width: 151px;
+height: 148px;
+left: 1608px;
+top: 497px;
+opacity: 0;
+}
+
+#bedroomTitle {
+position: absolute;
+width: 105px;
+height: 23px;
+left: 20px;
+top: 29px;
+}
+
+#den-device {
+position: absolute;
+width: 151px;
+height: 148px;
+left: 530px;
+top: 230px;
+opacity: 0;
+}
+
+#denTitle {
+position: absolute;
+width: 105px;
+height: 23px;
+left: 23px;
+top: 31px;
+}
+
+
+#config-btn {
+position: relative;
+width: 365px;
+height: 0px;
+top: 738px;
+left: 10px;
+}
+
+#data-rate {
+color: white;
+font-family: 'Open Sans', 'sans-serif';
+font-size: 23pt;
+height: 43px;
+left: 129px;
+overflow-x: hidden;
+position: absolute;
+text-align: right;
+top: 186px;
+width: 56px;
+font-style: normal;
+font-weight: 800;
+}
+#gaugeHolder {
+height: 218px;
+position: absolute;
+width: 217px;
+top: 6px;
+}
+
+#RM-32aID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-01ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-02ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-03ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-04ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-05ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-06ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-07ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-08ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-09ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-10ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-11ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-12ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-13ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-14ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-15ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-16ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-17ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-18ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-19ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-20ID {
+	
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-20ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-21ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-22ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+
+}
+#RM-23ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-24ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-25ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-26ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-27ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-28ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-29ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-30ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-31ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+#RM-32ID {
+height: 218px;
+left: 82px;
+overflow: hidden;
+position: absolute;
+top: 81px;
+width: 217px;
+}
+
+
+
+#plan-view-reset-btn {
+position: absolute;
+width: 133px;
+height: 83px;
+left: -6px;
+top: 239px;
+text-align: right;
+overflow-x: hidden;
+}
+
+#plan-devicePersonalities-Menu {
+position: absolute;
+width: 133px;
+height: 83px;
+left: 32px;
+top: 337px;
+opacity: 0;
+}
+
+
+#plan-view-data-rate {
+position: absolute;
+width: 58px;
+height: 43px;
+left: 20px;
+top: 103px;
+color: white;
+font-size: 21pt;
+font-family: 'Open Sans', 'sans-serif';
+text-align: right;
+overflow-x: hidden;
+font-style: normal;
+font-weight: 800;
+}
